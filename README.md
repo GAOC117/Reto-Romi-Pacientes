@@ -35,13 +35,14 @@
 -> cp .env.example .env
 
 4. Configura la base de datos SQLite:
-En la carpeta database crea -> database.sqlite y en la variable de entorno DB_DATABASE asignarle database/database.sqlite
+* En la carpeta database en el proyecto de laravel crea: 
+-> database.sqlite y en la variable de entorno DB_DATABASE asignarle database/database.sqlite
+
 Genera la clave de la aplicación:
 -> php artisan key:generate
 
 5. Ejecuta las migraciones:
 -> php artisan migrate
-
 
 6. Levanta el servidor:
 -> php artisan serve
