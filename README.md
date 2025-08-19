@@ -16,8 +16,8 @@
 - PHP >= 8.1
 - Composer
 - Node.js >= 18
-- npm o yarn
-- SQLite (ya configurado en el proyecto)
+- npm
+- SQLite
 
 ---
 
@@ -26,7 +26,7 @@
 ### Configuración
 
 1. Entra a la carpeta del backend:
-``cd laravel-X01-romi-patients
+- `cd laravel-X01-romi-patients
 
 2. Instala las dependencias:
 -> composer install
