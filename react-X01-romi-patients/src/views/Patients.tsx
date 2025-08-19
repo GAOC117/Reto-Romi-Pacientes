@@ -28,14 +28,14 @@ export default function Patients() {
   });
 
   const handleEdit = (paciente: Paciente) => {
-    console.log("Editando el id ", paciente.id);
+    
     setPacienteSeleccionado(paciente);
     setType("edicion");
     setModalOpen(true);
   };
 
   const handleDelete = (paciente: Paciente) => {
-    console.log("Eliminando el id ", paciente.id);
+
     setPacienteSeleccionado(paciente);
     setType("eliminar");
     setModalOpen(true);

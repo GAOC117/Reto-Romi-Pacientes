@@ -21,13 +21,13 @@ export const PatientsSchema = z.array(PatientSchema);
 export const SuccessAddPatientResponseSchema = z.object({
   success: z.literal(true),
   message: z.string(),
-  data: PatientSchema, // objeto paciente
+  data: PatientSchema, 
 });
 
 export const ErrorAddPatientResponseSchema = z.object({
   success: z.literal(false),
   message: z.string(),
-  errors: z.any().optional(), // a veces Laravel manda un array de errores
+  errors: z.any().optional(), 
 });
 
 
@@ -38,25 +38,16 @@ export const PatientsResponseSchema = z.object({
   });
 
 
-//  export const PatientFormSchema = z.object({
-//   name: z.string().nonempty("El nombre es obligatorio"),
-//   age: z
-//     .string() // input tipo text
-//     .refine((val) => /^\d+$/.test(val), {
-//       message: "La edad debe ser un número entero",
-//     })
-//     .transform((val) => parseInt(val, 10)), // lo convierte a number
-//   symptoms: z.string().nonempty("Los síntomas son obligatorios"),
-// });
+
 
 
 export const SuccessDeletePatientResponseSchema = z.object({
   success: z.literal(true),
-  message: z.string(), // ejemplo: "Paciente eliminado correctamente"
+  message: z.string(), 
 });
 
 // Schema para respuesta de error de delete
 export const ErrorDeletePatientResponseSchema = z.object({
   success: z.literal(false),
-  message: z.string(), // ejemplo: "No se pudo eliminar el paciente"
+  message: z.string(), 
 });

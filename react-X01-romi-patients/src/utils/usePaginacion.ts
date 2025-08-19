@@ -3,7 +3,7 @@ export default function obtenerPaginasPaginacion(
   totalPaginas: number,
   botonesPorPagina: number
 )
-// : { paginas: number[] } 
+
 {
   const paginas: number[] = [];
 

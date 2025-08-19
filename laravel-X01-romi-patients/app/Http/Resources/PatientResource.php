@@ -14,7 +14,7 @@ class PatientResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return [
+        return [ //solo quiero me retorne esto
             'id' => $this->id,
             'name' => $this->name,
             'age' => $this->age,

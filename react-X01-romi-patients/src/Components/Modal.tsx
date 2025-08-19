@@ -17,14 +17,7 @@ type ModalPros = {
 export default function Modal({ type, show, onClose, paciente, fetchPatients }: ModalPros) {
   return (
     <>
-      {/* <div className="fixed right-5 bottom-5 flex items-center justify-center">
-        <button
-          type="button" 
-          onClick={()=> dispatch({ type: 'show-hide-modal' })}
-        >
-          <PlusCircleIcon className='w-16 h-16 text-blue-600 hover:text-blue-700 rounded-full cursor-pointer' />
-        </button>
-      </div> */}
+     
 
       <Transition appear show={show} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={onClose}>

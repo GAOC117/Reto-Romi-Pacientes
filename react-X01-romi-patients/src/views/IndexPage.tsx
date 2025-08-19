@@ -22,13 +22,7 @@ export default function IndexPage() {
     fetchPatients(); // llamada inicial
   }, []);
 
-  // const handleEdit = (id: number) => {
-  //   console.log("Editando el id ", id);
-  // };
-
-  // const handleDelete = (id: number) => {
-  //   console.log("Eliminando el id ", id);
-  // };
+ 
 
   return (
     <>

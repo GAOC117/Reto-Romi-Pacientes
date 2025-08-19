@@ -19,7 +19,7 @@ export async function getPatientPrincipal() {
     const result = PatientsSchema.safeParse(data);
 
     if (result.success) return result.data;
-    // console.log(data);
+    
     return []; //si no se cumple el if se retorna un arreglo que es lo que esta esperando el useState de patienState
   } catch (error) {
     console.log(error);
@@ -38,10 +38,10 @@ export async function getPatients(search: string, paginaActual: number) {
     } = await clienteAxios(url);
 
     const result = PatientsResponseSchema.safeParse(data);
-    // console.log(result);
+   
 
      if (result.success) return result.data;
-    // console.log(data);
+  
      return { current_page: 1, data: [], last_page: 1 }; //si no se cumple el if se retorna un arreglo que es lo que esta esperando el useState de patienState
   } catch (error) {
     console.log(error);

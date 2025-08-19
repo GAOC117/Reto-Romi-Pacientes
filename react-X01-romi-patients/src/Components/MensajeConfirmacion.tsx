@@ -17,21 +17,21 @@ export default function MensajeConfirmacion({
 
 const deletePatient = async (id: number) => {
     const respuesta = await deletePatientById(id);
-    console.log(respuesta);
+    
 
     if (respuesta.success) toast.success(respuesta.message);
     else toast.error(respuesta.message);
   };
 
   const aceptarBtn = async () => {
-    console.log('se elimina');
+    
     await deletePatient(paciente.id);
     await fetchPatients();
     onClose();
   };
 
   const cancelarBtn = () => {
-        console.log('cancele');
+        
     onClose();
   };
 
