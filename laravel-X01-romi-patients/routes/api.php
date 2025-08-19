@@ -10,8 +10,13 @@ Route::get('/user', function (Request $request) {
 
 
 
-Route::get('/patients-principal',[PatientController::class, 'principal']); //mostrar los 10 ultimos pacientes
-Route::post('/add-patient',[PatientController::class, 'store']); //agregar un paciente
-Route::get('/patients',[PatientController::class, 'index']); //mostrar los pacientes con paginador
+//Mostrar los 10 ultimos pacientes
+Route::get('/patients/latest',[PatientController::class, 'principal']); 
+//Agregar un paciente
+Route::post('/patients',[PatientController::class, 'store']); 
+//Listar pacientes con paginador y input de busqueda
+Route::get('/patients',[PatientController::class, 'index']); 
+//Actualizar un paciente
 Route::put('/patients/{id}',[PatientController::class, 'update']);
+//Eliminar un paciente
 Route::delete('/patients/{id}', [PatientController::class, 'destroy']);

@@ -29,28 +29,28 @@
 - `cd laravel-X01-romi-patients`
 
 2. Instala las dependencias:
--`composer install`
+- `composer install`
 
 3. Copia el archivo de ejemplo .env.example y crea tu .env:
--> cp .env.example .env
+- `cp .env.example .env`
 
 4. Configura la base de datos SQLite:
 * En la carpeta database en el proyecto de laravel crea: 
--> database.sqlite y en la variable de entorno DB_DATABASE asignarle database/database.sqlite
+- `database.sqlite y en la variable de entorno DB_DATABASE asignarle database/database.sqlite`
 
 Genera la clave de la aplicación:
--> php artisan key:generate
+- `php artisan key:generate`
 
 5. Ejecuta las migraciones:
--> php artisan migrate
+- `php artisan migrate`
 
 6. Levanta el servidor:
--> php artisan serve
+- `php artisan serve`
 
 Por defecto Laravel correrá en http://127.0.0.1:8000.
 
 7. Puedes correr el seeder PatientSeeder para llenar la base de datos con 10 registros aleatoreos
--> php artisan db:seed
+- `php artisan db:seed`
 
 ______________________________________________________
 
@@ -59,22 +59,22 @@ ______________________________________________________
 ### Configuración
 
 1. Entra a la carpeta del frontend:
--> cd react-X01-romi-patients
+- `cd react-X01-romi-patients`
 
 
 2. Instala las dependencias:
--> npm install
+- `npm install`
 
 
 Nota: Se usan dependencias como React Toastify para notificaciones, React Router Dom, etc.
 
 3. Crea el archivo .env.local basado en tu entorno local:
--> VITE_API_URL=http://127.0.0.1:8000
+- `VITE_API_URL=http://127.0.0.1:8000`
 
 Ajusta la URL según donde esté corriendo tu backend Laravel.
 
 4. Levanta el servidor de desarrollo:
--> npm run dev
+- `npm run dev`
 
 ## Uso
 
@@ -84,14 +84,14 @@ El backend ofrece los endpoints en http://127.0.0.1:8000/api/patients.
 ## Scripts útiles
 ### Laravel
 
-* php artisan serve → Levanta el servidor local.
-* php artisan migrate → Ejecuta migraciones.
-* php artisan db:seed → Si hubiera seeders, ejecuta datos de prueba.
+* `php artisan serve` → Levanta el servidor local.
+* `php artisan migrate` → Ejecuta migraciones.
+* `php artisan db:seed` → Si hubiera seeders, ejecuta datos de prueba.
 
 ### React
 
-* npm run dev → Levanta el servidor de desarrollo.
-* npm run build → Genera build para producción.
+* `npm run dev` → Levanta el servidor de desarrollo.
+* `npm run build` → Genera build para producción.
 
 
 

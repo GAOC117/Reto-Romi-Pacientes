@@ -10,7 +10,7 @@ import clienteAxios from "../config/axios";
 import type { PacienteDraft } from "../types";
 
 export async function getPatientPrincipal() {
-  const url = "/api/patients-principal";
+  const url = "/api/patients/latest";
 
   try {
     const {
@@ -50,7 +50,7 @@ export async function getPatients(search: string, paginaActual: number) {
 }
 
 export async function addPatient(data: PacienteDraft) {
-  const url = "/api/add-patient";
+  const url = "/api/patients";
   try {
     const respuesta = await clienteAxios.post(url, data);
     
