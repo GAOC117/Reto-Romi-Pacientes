@@ -34,7 +34,8 @@
 3. Copia el archivo de ejemplo .env.example y crea tu .env:
 -> cp .env.example .env
 
-4. Configura la base de datos (SQLite ya preconfigurado). Por defecto se encuentra en database/database.sqlite.
+4. Configura la base de datos SQLite:
+En la carpeta database crea -> database.sqlite y en la variable de entorno DB_DATABASE asignarle database/database.sqlite
 Genera la clave de la aplicación:
 -> php artisan key:generate
 
